@@ -14,57 +14,73 @@
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
-<body class="bg-zinc-950 text-white">
-     <header class="sticky top-0 z-50 border-b border-zinc-800 bg-zinc-950/95 backdrop-blur">
-        <div class="container mx-auto px-5">
-            <nav class="flex min-h-[75px] items-center justify-between">
+<body class="bg-slate-950 text-slate-100 antialiased">
+     <header class="sticky top-0 z-50 border-b border-slate-800 bg-slate-950/95 backdrop-blur">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <nav class="relative flex min-h-[75px] items-center justify-between gap-3">
 
-                <a href="#home" class="text-2xl font-bold tracking-wider">
-                    IRON <span class="text-red-600">FORCE</span>
+                <a href="index.html#home" class="shrink-0 text-2xl font-bold tracking-wider">
+                    IRON <span class="text-amber-400">FORCE</span>
                 </a>
 
-                <div class="hidden items-center gap-7 lg:flex">
-                    <a href="index.html" class="text-sm uppercase tracking-wide hover:text-red-500 transition">Home</a>
-                    <a href="about.html" class="text-sm uppercase tracking-wide hover:text-red-500 transition">About</a>
-                    <a href="programs.html" class="text-sm uppercase tracking-wide hover:text-red-500 transition">Programs</a>
-                    <a href="trainer.html" class="text-sm uppercase tracking-wide hover:text-red-500 transition">Trainers</a>
+                <div class="hidden shrink-0 items-center gap-7 md:flex">
+                    <a href="index.html" class="whitespace-nowrap text-sm uppercase tracking-wide hover:text-amber-400 transition">Home</a>
+                    <a href="about.html" class="whitespace-nowrap text-sm uppercase tracking-wide hover:text-amber-400 transition">About</a>
+                    <a href="programs.html" class="whitespace-nowrap text-sm uppercase tracking-wide hover:text-amber-400 transition">Programs</a>
+                    <a href="trainer.html" class="whitespace-nowrap text-sm uppercase tracking-wide hover:text-amber-400 transition">Trainers</a>
                 </div>
 
                 <a href="form.html"
-                   class="hidden rounded-lg bg-red-600 px-5 py-3 text-sm font-bold uppercase tracking-wide hover:bg-red-700 transition sm:block">
+                   class="hidden shrink-0 rounded-lg bg-amber-500 px-5 py-3 text-sm font-bold uppercase tracking-wide text-slate-950 hover:bg-amber-400 transition md:block shadow-lg shadow-amber-500/20 duration-300 hover:-translate-y-0.5 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-amber-400 focus-visible:ring-offset-2 focus-visible:ring-offset-slate-950">
                     Join Now
                 </a>
 
                 <a href="form.html"
-                   class="rounded-lg border border-red-600 px-4 py-2 text-sm font-bold uppercase lg:hidden">
+                   class="shrink-0 rounded-lg border border-amber-500 px-4 py-2 text-sm font-bold uppercase md:hidden">
                     Join
                 </a>
+
+                <details class="group relative shrink-0 md:hidden">
+                    <summary class="flex h-11 w-11 cursor-pointer list-none items-center justify-center rounded-lg border border-slate-700 text-2xl leading-none text-amber-400 hover:border-amber-400 hover:bg-slate-900 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-amber-400 marker:content-none">
+                        <span class="group-open:hidden" aria-hidden="true">☰</span>
+                        <span class="hidden group-open:inline" aria-hidden="true">✕</span>
+                        <span class="sr-only">Toggle navigation menu</span>
+                    </summary>
+                    <div class="absolute right-0 top-full z-50 mt-3 w-64 max-w-full rounded-xl border border-slate-800 bg-slate-900 p-3 shadow-xl">
+                        <div class="flex flex-col gap-1">
+                            <a href="index.html" class="rounded-lg px-4 py-3 text-sm uppercase tracking-wide hover:bg-slate-800 hover:text-amber-400 transition">Home</a>
+                            <a href="about.html" class="rounded-lg px-4 py-3 text-sm uppercase tracking-wide hover:bg-slate-800 hover:text-amber-400 transition">About</a>
+                            <a href="programs.html" class="rounded-lg px-4 py-3 text-sm uppercase tracking-wide hover:bg-slate-800 hover:text-amber-400 transition">Programs</a>
+                            <a href="trainer.html" class="rounded-lg px-4 py-3 text-sm uppercase tracking-wide hover:bg-slate-800 hover:text-amber-400 transition">Trainers</a>
+                        </div>
+                    </div>
+                </details>
             </nav>
         </div>
     </header>
 
-     <section id="contact" class="py-24">
-        <div class="container mx-auto px-5">
+     <section id="contact" class="py-16 sm:py-20 lg:py-24 bg-slate-900/30">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
 
             <div class="mx-auto mb-14 max-w-2xl text-center">
-                <p class="mb-3 font-bold uppercase tracking-[0.25em] text-red-500">
+                <p class="mb-3 font-bold uppercase tracking-[0.25em] text-amber-400">
                     Contact Us
                 </p>
 
-                <h2 class="text-4xl font-bold uppercase sm:text-5xl">
+                <h2 class="text-3xl font-bold uppercase tracking-tight sm:text-4xl lg:text-5xl">
                     Get In Touch
                 </h2>
             </div>
 
             <div class="grid gap-10 lg:grid-cols-2">
 
-                <div class="rounded-3xl border border-zinc-800 bg-zinc-900 p-8 sm:p-10">
+                <div class="rounded-3xl border border-slate-800 bg-slate-900 p-8 sm:p-10 shadow-xl shadow-slate-950/30 transition duration-300 hover:-translate-y-1 hover:border-amber-400">
 
                     <h3 class="text-3xl font-bold uppercase">
                         Visit Iron Force
                     </h3>
 
-                    <p class="mt-4 leading-7 text-zinc-400">
+                    <p class="mt-4 leading-7 text-slate-300">
                         Have questions about membership or training programs?
                         Contact our team and start your fitness journey.
                     </p>
@@ -72,29 +88,29 @@
                     <div class="mt-8 space-y-6">
 
                         <div>
-                            <p class="text-sm uppercase tracking-wider text-red-500">Address</p>
-                            <p class="mt-1 text-zinc-300">
+                            <p class="text-sm uppercase tracking-wider text-amber-400">Address</p>
+                            <p class="mt-1 text-slate-300">
                                 123 Fitness Street, Jaipur, Rajasthan, India
                             </p>
                         </div>
 
                         <div>
-                            <p class="text-sm uppercase tracking-wider text-red-500">Phone</p>
-                            <p class="mt-1 text-zinc-300">
+                            <p class="text-sm uppercase tracking-wider text-amber-400">Phone</p>
+                            <p class="mt-1 text-slate-300">
                                 +91 9660790529
                             </p>
                         </div>
 
                         <div>
-                            <p class="text-sm uppercase tracking-wider text-red-500">Email</p>
-                            <p class="mt-1 text-zinc-300">
+                            <p class="text-sm uppercase tracking-wider text-amber-400">Email</p>
+                            <p class="mt-1 text-slate-300">
                                 tusharbishnoi437@gmail.com
                             </p>
                         </div>
 
                         <div>
-                            <p class="text-sm uppercase tracking-wider text-red-500">Opening Hours</p>
-                            <p class="mt-1 text-zinc-300">
+                            <p class="text-sm uppercase tracking-wider text-amber-400">Opening Hours</p>
+                            <p class="mt-1 text-slate-300">
                                 Monday - Sunday: 5:00 AM - 11:00 PM
                             </p>
                         </div>
@@ -102,7 +118,7 @@
                     </div>
                 </div>
 
-                <div class="rounded-3xl border border-zinc-800 bg-zinc-900 p-8 sm:p-10">
+                <div class="rounded-3xl border border-slate-800 bg-slate-900 p-8 sm:p-10 shadow-xl shadow-slate-950/30 transition duration-300 hover:-translate-y-1 hover:border-amber-400">
 
                     <form>
 
@@ -116,7 +132,7 @@
                                 <input
                                     type="text"
                                     placeholder="Your Name"
-                                    class="w-full rounded-lg border border-zinc-700 bg-zinc-950 px-4 py-3 text-white outline-none focus:border-red-600">
+                                    class="w-full rounded-lg border border-slate-700 bg-slate-950 px-4 py-3 text-slate-100 outline-none focus:border-amber-500 antialiased focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-amber-400 focus-visible:ring-offset-2 focus-visible:ring-offset-slate-950">
                             </div>
 
                             <div>
@@ -127,7 +143,7 @@
                                 <input
                                     type="email"
                                     placeholder="Your Email"
-                                    class="w-full rounded-lg border border-zinc-700 bg-zinc-950 px-4 py-3 text-white outline-none focus:border-red-600">
+                                    class="w-full rounded-lg border border-slate-700 bg-slate-950 px-4 py-3 text-slate-100 outline-none focus:border-amber-500 antialiased focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-amber-400 focus-visible:ring-offset-2 focus-visible:ring-offset-slate-950">
                             </div>
 
                         </div>
@@ -140,7 +156,7 @@
                             <input
                                 type="tel"
                                 placeholder="+91 "
-                                class="w-full rounded-lg border border-zinc-700 bg-zinc-950 px-4 py-3 text-white outline-none focus:border-red-600">
+                                class="w-full rounded-lg border border-slate-700 bg-slate-950 px-4 py-3 text-slate-100 outline-none focus:border-amber-500 antialiased focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-amber-400 focus-visible:ring-offset-2 focus-visible:ring-offset-slate-950">
                         </div>
 
                         <div class="mt-5">
@@ -151,12 +167,12 @@
                             <textarea
                                 rows="6"
                                 placeholder="Write your message..."
-                                class="w-full resize-none rounded-lg border border-zinc-700 bg-zinc-950 px-4 py-3 text-white outline-none focus:border-red-600"></textarea>
+                                class="w-full resize-none rounded-lg border border-slate-700 bg-slate-950 px-4 py-3 text-slate-100 outline-none focus:border-amber-500 antialiased focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-amber-400 focus-visible:ring-offset-2 focus-visible:ring-offset-slate-950"></textarea>
                         </div>
 
                         <button
                             type="submit"
-                            class="mt-6 w-full rounded-lg bg-red-600 py-4 font-bold uppercase tracking-wide hover:bg-red-700 transition">
+                            class="mt-6 w-full rounded-lg bg-amber-500 py-4 font-bold uppercase tracking-wide text-slate-950 hover:bg-amber-400 transition shadow-lg shadow-amber-500/20 duration-300 hover:-translate-y-0.5 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-amber-400 focus-visible:ring-offset-2 focus-visible:ring-offset-slate-950">
                             Send Message
                         </button>
 
@@ -167,18 +183,18 @@
         </div>
     </section>
 
-      <footer class="border-t border-zinc-800 bg-black pt-16">
+      <footer class="border-t border-slate-800 bg-slate-950 pt-16">
 
-        <div class="container mx-auto px-5">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
 
             <div class="grid gap-10 pb-12 sm:grid-cols-2 lg:grid-cols-4">
 
                 <div>
                     <a href="#home" class="text-2xl font-bold tracking-wider">
-                        IRON <span class="text-red-600">FORCE</span>
+                        IRON <span class="text-amber-400">FORCE</span>
                     </a>
 
-                    <p class="mt-5 leading-7 text-zinc-500">
+                    <p class="mt-5 leading-7 text-slate-400">
                         Premium fitness training designed to help you become stronger,
                         healthier and more confident.
                     </p>
@@ -188,11 +204,11 @@
                 <div>
                     <h3 class="text-lg font-bold uppercase">Quick Links</h3>
 
-                    <ul class="mt-5 space-y-3 text-zinc-500">
-                        <li><a href="#home" class="hover:text-red-500 transition">Home</a></li>
-                        <li><a href="#about" class="hover:text-red-500 transition">About</a></li>
-                        <li><a href="#programs" class="hover:text-red-500 transition">Programs</a></li>
-                        <li><a href="#trainers" class="hover:text-red-500 transition">Trainers</a></li>
+                    <ul class="mt-5 space-y-3 text-slate-400">
+                        <li><a href="#home" class="hover:text-amber-400 transition">Home</a></li>
+                        <li><a href="#about" class="hover:text-amber-400 transition">About</a></li>
+                        <li><a href="#programs" class="hover:text-amber-400 transition">Programs</a></li>
+                        <li><a href="#trainers" class="hover:text-amber-400 transition">Trainers</a></li>
                     </ul>
                 </div>
 
@@ -200,7 +216,7 @@
                 <div>
                     <h3 class="text-lg font-bold uppercase">Programs</h3>
 
-                    <ul class="mt-5 space-y-3 text-zinc-500">
+                    <ul class="mt-5 space-y-3 text-slate-400">
                         <li>Strength Training</li>
                         <li>Weight Loss</li>
                         <li>Cardio Training</li>
@@ -212,23 +228,23 @@
                 <div>
                     <h3 class="text-lg font-bold uppercase">Contact</h3>
 
-                    <ul class="mt-5 space-y-3 text-zinc-500">
+                    <ul class="mt-5 space-y-3 text-slate-400">
                         <li>Jaipur, Rajasthan</li>
                         <li>+91 9660790529</li>
                         <li>tusharbishnoi437@gmail.com</li>
                     </ul>
 
                     <div class="mt-5 flex gap-3">
-                        <a href="#" class="flex h-10 w-10 items-center justify-center rounded-full bg-zinc-900 hover:bg-red-600 transition">f</a>
-                        <a href="#" class="flex h-10 w-10 items-center justify-center rounded-full bg-zinc-900 hover:bg-red-600 transition">ig</a>
-                        <a href="#" class="flex h-10 w-10 items-center justify-center rounded-full bg-zinc-900 hover:bg-red-600 transition">in</a>
+                        <a href="#" class="flex h-10 w-10 items-center justify-center rounded-full bg-slate-900 hover:bg-amber-500 transition hover:text-slate-950">f</a>
+                        <a href="#" class="flex h-10 w-10 items-center justify-center rounded-full bg-slate-900 hover:bg-amber-500 transition hover:text-slate-950">ig</a>
+                        <a href="#" class="flex h-10 w-10 items-center justify-center rounded-full bg-slate-900 hover:bg-amber-500 transition hover:text-slate-950">in</a>
                     </div>
                 </div>
 
             </div>
 
 
-            <div class="border-t border-zinc-800 py-6 text-center text-sm text-zinc-600">
+            <div class="border-t border-slate-800 py-6 text-center text-sm text-slate-400">
                 © 2026 IRON FORCE FITNESS. All Rights Reserved.
             </div>
 
